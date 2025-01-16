@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Cafe</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/phantom-style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand ghost-text" href="#">Phantom Cafe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container text-center">
+            <h1 class="display-1 mb-4 ghost-text">Phantom Cafe Level 2</h1>
+            <p class="lead mb-4">Where mysterious flavors come to life</p>
+            <button class="btn btn-outline-light btn-lg" onclick="scrollToMenu()">View Menu</button>
+        </div>
+    </section>
+
+<!-- Partner section -->
+<section class="partner-slider">
+    <div class="logo-slide-track">
+        <!-- Duplicate logos for smooth infinite scroll -->
+        <div class="logo-slide"><img src="img/partner1.png" alt="Partner 1"></div>
+        <div class="logo-slide"><img src="img/partner2.png" alt="Partner 2"></div>
+        <div class="logo-slide"><img src="img/partner3.png" alt="Partner 3"></div>
+        <div class="logo-slide"><img src="img/partner4.png" alt="Partner 4"></div>
+        <div class="logo-slide"><img src="img/partner5.png" alt="Partner 5"></div>
+        <div class="logo-slide"><img src="img/partner6.png" alt="Partner 6"></div>
+        <div class="logo-slide"><img src="img/partner7.png" alt="Partner 7"></div>
+        <!-- Duplicate set for seamless loop -->
+        <div class="logo-slide"><img src="img/partner1.png" alt="Partner 1"></div>
+        <div class="logo-slide"><img src="img/partner2.png" alt="Partner 2"></div>
+        <div class="logo-slide"><img src="img/partner3.png" alt="Partner 3"></div>
+        <div class="logo-slide"><img src="img/partner4.png" alt="Partner 4"></div>
+        <div class="logo-slide"><img src="img/partner5.png" alt="Partner 5"></div>
+        <div class="logo-slide"><img src="img/partner6.png" alt="Partner 6"></div>
+        <div class="logo-slide"><img src="img/partner7.png" alt="Partner 7"></div>
+    </div>
+</section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 ghost-text">Our Haunted Menu</h2>
+            <div class="row g-4" id="menuItems">
+                <!-- Menu items will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 ghost-text">Our Story</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="img/cafe-interior.webp" alt="Cafe Interior" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <p class="lead">Step into a realm where coffee meets mystery at Phantom Cafe.</p>
+                    <p>Our century-old building houses more than just exceptional beverages – it’s home to a rich history and unforgettable experiences.
+                        <br/>
+                        <br> Every cup we serve tells a story, crafted with passion and a touch of the supernatural. Beneath the warm glow of antique chandeliers, the air hums with whispers of the past. From the creaking wooden floors to the intricate carvings on the walls, every detail has a tale to share.
+                        <br/>
+                        <br> Legend has it that the cafe was once a gathering place for poets, dreamers, and adventurers who etched their secrets into the walls. Some say their spirits linger, inspiring the atmosphere of wonder that envelops each visitor.
+                        <br/>
+                        <br> Sip on our signature Mystic Mocha while unraveling a hidden message tucked inside your napkin. Indulge in the Ethereal Espresso as you hear the faint strains of a forgotten melody from the vintage gramophone.
+                        <br/>
+                        <br> At Phantom Cafe, every visit is more than just a coffee break – it’s a journey into the unknown, where flavors and stories intertwine, leaving you enchanted and craving more.
+                        <br/>
+                        <br> #phantomcafe #phantom #wayphantomme
+                        <br/>
+                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Gallery section -->
+<section class="gallery-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 ghost-text">Our Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="img/gallery1.jpg" alt="Cafe Interior">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery2.jpg" alt="Coffee Art">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery3.jpg" alt="Pastries">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery4.jpg" alt="Ambiance">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery5.jpg" alt="Events">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery6.jpg" alt="Special Drinks">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial section -->
+<section class="review-slider py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 ghost-text">Customer Reviews</h2>
+        <div class="review-container">
+            <div id="reviewSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="review-card">
+                            <div class="review-profile">
+                                <img src="img/review1.jpg" alt="Lanccelot">
+                            </div>
+                            <h5>Lanccelot</h5>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                            <p class="review-text">"The atmosphere is hauntingly beautiful! The Ghost Latte is a must-try - it's picture perfect and delicious!"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-card">
+                            <div class="review-profile">
+                                <img src="img/review2.jpg" alt="Odette">
+                            </div>
+                            <h5>Odette</h5>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                            <p class="review-text">"Best themed cafe I've ever visited! The attention to detail is amazing, and the Haunted Hot Chocolate is to die for!"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-card">
+                            <div class="review-profile">
+                                <img src="img/review3.jpg" alt="Guinivere">
+                            </div>
+                            <h5>Guinivere</h5>
+                            <div class="stars">
+                                ★★★★★
+                            </div>
+                            <p class="review-text">"Such a unique experience! The staff is friendly, and the Spectral Espresso gave me the perfect boost for my day."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 ghost-text">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Phantom Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/phantom-menu.js"></script>
+    <script src="js/phantom-script.js"></script>
+</body>
+</html>

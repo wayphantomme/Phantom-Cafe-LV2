@@ -1,0 +1,200 @@
+:root {
+    --phantom-purple: #6f42c1;
+    --phantom-gray: #343a40;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('/img/hero-bg.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.menu-item {
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.ghost-text {
+    color: var(--phantom-purple);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    background-color: var(--phantom-gray);
+    color: white;
+}
+
+/* Menu Item Styles */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contact Form Styles */
+.form-control {
+    border: 2px solid var(--phantom-gray);
+    padding: 0.8rem;
+}
+
+.form-control:focus {
+    border-color: var(--phantom-purple);
+    box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh;
+    }
+    
+    .display-1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Existing CSS remains the same */
+
+/* Partner Logo Slider */
+.partner-slider {
+    background: rgba(0, 0, 0, 0.02);
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.logo-slide-track {
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(200px * 14);
+}
+
+.logo-slide {
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-slide img {
+    max-width: 140px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.logo-slide img:hover {
+    filter: grayscale(0%);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-200px * 7)); }
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    aspect-ratio: 1;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Reviews Slider */
+.review-slider {
+    padding: 60px 0;
+}
+
+.review-card {
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    overflow: hidden;
+}
+
+.review-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stars {
+    color: #ffd700;
+    margin: 10px 0;
+}
+
+.review-text {
+    font-style: italic;
+    color: #666;
+    margin: 15px 0;
+}
+
+/* Slider Navigation */
+.slider-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slider-nav button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 5px;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.slider-nav button.active {
+    background: var(--phantom-purple);
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
